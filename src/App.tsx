@@ -198,7 +198,7 @@ export default function App() {
             <span className={isDarkMode ? 'text-slate-700' : 'text-slate-300'}>|</span>
 
             <span className={isDarkMode ? 'text-slate-500' : 'text-slate-400'}>
-              Số điện thoại: 0377 783 877. Địa chỉ: Đường Lý Nhơn, ấp Lý Thái Bửu, xã An Thới Đông, TP. Hồ Chí Minh
+              Hotline: 0377 783 877. Địa chỉ: Lý Nhơn, ấp Lý Thái Bửu, xã An Thới Đông, TP. Hồ Chí Minh
             </span>
           </div>
         </div>
