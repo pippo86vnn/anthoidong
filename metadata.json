@@ -1,0 +1,10 @@
+{
+  "name": "DASHBOARD PHƯỜNG BÌNH TIÊN",
+  "description": "Hệ thống Quản lý Góp ý, Phản ảnh, Kiến nghị cho đoàn viên, hội viên và nhân dân",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
