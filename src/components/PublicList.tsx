@@ -96,7 +96,7 @@ export const PublicList: React.FC<PublicListProps> = ({ items, onOpenImageModal 
               onChange={(e) => setSelectedKhuPho(e.target.value)}
               className="py-2 px-3 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-xl focus:bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300"
             >
-              <option value="">Tất cả Ấp (1 - 8)</option>
+              <option value="">Tất cả các Ấp</option>
               {KHU_PHO_LIST.map((kp) => (
                 <option key={kp} value={kp}>
                   {kp}

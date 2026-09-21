@@ -19,7 +19,7 @@ const CATEGORY_CARDS: { id: DanhMucPhanAnh; title: string; icon: any; color: str
 export const CitizenForm: React.FC<CitizenFormProps> = ({ onSubmit, onSuccessNavigate }) => {
   const [nguoiGui, setNguoiGui] = useState('');
   const [soDienThoai, setSoDienThoai] = useState('');
-  const [khuPho, setKhuPho] = useState('Ấp 1');
+  const [khuPho, setKhuPho] = useState('Ấp Rạch Lá');
   const [danhMuc, setDanhMuc] = useState<DanhMucPhanAnh | ''>('');
   const [noiDung, setNoiDung] = useState('');
   const [hinhAnh, setHinhAnh] = useState('');
@@ -73,7 +73,7 @@ export const CitizenForm: React.FC<CitizenFormProps> = ({ onSubmit, onSuccessNav
   const handleQuickDemo = () => {
     setNguoiGui('Trần Hoàng Nam');
     setSoDienThoai('0909888777');
-    setKhuPho('Ấp 2');
+    setKhuPho('Ấp An Bình');
     setDanhMuc('Kinh tế, Hạ tầng và Đô thị');
     setNoiDung('Nắp hố ga thoát nước trước nhà số 245 Cao Văn Lầu bị bể vỡ bê tông, miệng hố ga hở rộng rất nguy hiểm cho trẻ em và xe máy qua lại.');
     setHinhAnh('');
@@ -127,7 +127,7 @@ export const CitizenForm: React.FC<CitizenFormProps> = ({ onSubmit, onSuccessNav
   const handleResetForm = () => {
     setNguoiGui('');
     setSoDienThoai('');
-    setKhuPho('Ấp 1');
+    setKhuPho('Ấp Rạch Lá');
     setDanhMuc('');
     setNoiDung('');
     setHinhAnh('');
@@ -250,7 +250,7 @@ export const CitizenForm: React.FC<CitizenFormProps> = ({ onSubmit, onSuccessNav
             {/* Khu phố */}
             <div>
               <label className="block text-xs font-semibold uppercase text-slate-600 dark:text-slate-400 mb-1.5">
-                Địa bàn Ấp (1 - 8) <span className="text-rose-500">*</span>
+                Địa bàn Ấp <span className="text-rose-500">*</span>
               </label>
               <select
                 value={khuPho}

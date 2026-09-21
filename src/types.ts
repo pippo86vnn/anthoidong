@@ -33,7 +33,16 @@ export const DANH_MUC_LIST: DanhMucPhanAnh[] = [
   'Khác'
 ];
 
-// Tạo danh sách 8 Ấp (Ấp 1 -> Ấp 8)
-export const KHU_PHO_LIST: string[] = Array.from({ length: 8 }, (_, i) => `Ấp ${i + 1}`);
+// Danh sách các Ấp
+export const KHU_PHO_LIST: string[] = [
+  'Ấp Rạch Lá',
+  'Ấp An Bình',
+  'Ấp An Đông',
+  'Ấp Quảng Xuyên',
+  'Ấp Doi Lầu',
+  'Ấp Vàm Sát',
+  'Ấp Lý Thái Bửu',
+  'Ấp Lý Nhơn'
+];
 
 export type TabType = 'citizen_submit' | 'public_list' | 'admin_manage' | 'dashboard';
