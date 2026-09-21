@@ -81,7 +81,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ items, onUpdateItem, onO
     const matchSt = !statusFilter || item.trangThai === statusFilter;
     const matchKp = !khuPhoFilter || item.khuPho === khuPhoFilter;
     const matchDm = !danhMucFilter || item.danhMuc === danhMucFilter;
-    
+
     return matchKw && matchSt && matchKp && matchDm;
   });
 
@@ -108,9 +108,8 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ items, onUpdateItem, onO
                 setPinError(false);
               }}
               placeholder="Nhập mã PIN (Mặc định: 123456)"
-              className={`w-full text-center text-lg font-mono tracking-widest py-3 px-4 bg-slate-50 dark:bg-slate-900 border rounded-xl focus:bg-white dark:bg-slate-800 focus:ring-2 ${
-                pinError ? 'border-rose-500 focus:ring-rose-500' : 'border-slate-300 dark:border-slate-600 focus:ring-amber-500'
-              }`}
+              className={`w-full text-center text-lg font-mono tracking-widest py-3 px-4 bg-slate-50 dark:bg-slate-900 border rounded-xl focus:bg-white dark:bg-slate-800 focus:ring-2 ${pinError ? 'border-rose-500 focus:ring-rose-500' : 'border-slate-300 dark:border-slate-600 focus:ring-amber-500'
+                }`}
             />
             {pinError && (
               <p className="text-xs text-rose-600 font-medium mt-1.5 flex items-center justify-center gap-1">
@@ -176,7 +175,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ items, onUpdateItem, onO
               <option key={kp} value={kp}>{kp}</option>
             ))}
           </select>
-          
+
           <select
             value={danhMucFilter}
             onChange={(e) => setDanhMucFilter(e.target.value)}
@@ -363,8 +362,8 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ items, onUpdateItem, onO
                 className="w-full text-xs font-bold py-2.5 px-3 border border-slate-300 dark:border-slate-600 rounded-xl bg-slate-50 dark:bg-slate-900 focus:bg-white dark:bg-slate-800 focus:ring-2 focus:ring-sky-500"
               >
                 <option value="">-- Chọn cán bộ --</option>
-                <option value="Phạm Chí Trung">Phạm Chí Trung</option>
-                <option value="Nguyễn Hoàng Minh">Nguyễn Hoàng Minh</option>
+                <option value="Lê Võ Đăng Khoa">Lê Võ Đăng Khoa</option>
+                <option value="Ngô Hoàng Quý">Ngô Hoàng Quý</option>
               </select>
             </div>
 
@@ -391,8 +390,8 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ items, onUpdateItem, onO
 
               {editHinhAnhXuLy && (
                 <div className="mt-3 p-2 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 inline-block relative">
-                  <button 
-                    type="button" 
+                  <button
+                    type="button"
                     onClick={() => setEditHinhAnhXuLy('')}
                     className="absolute -top-2 -right-2 bg-rose-500 text-white rounded-full p-1 shadow hover:bg-rose-600 z-10"
                   >
