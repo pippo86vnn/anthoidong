@@ -57,8 +57,10 @@ export const Header: React.FC<HeaderProps> = ({
                   ỦY BAN MẶT TRẬN TỔ QUỐC VIỆT NAM XÃ AN THỚI ĐÔNG
                 </span>
               </div>
-              <h1 className="text-xl sm:text-2xl font-black tracking-tight mt-0.5 uppercase">
-                DASHBOARD XÃ AN THỚI ĐÔNG
+              <h1 className="text-base sm:text-lg font-black tracking-tight mt-0.5 uppercase leading-snug">
+                DASHBOARD ỦY BAN MẶT TRẬN TỔ QUỐC VIỆT NAM
+                <br />
+                XÃ AN THỚI ĐÔNG
               </h1>
               <p className="text-white/80 text-xs sm:text-sm mt-0.5 font-light">
                 Hệ thống Quản lý Góp ý, Phản ảnh, Kiến nghị cho đoàn viên, hội viên và nhân dân
